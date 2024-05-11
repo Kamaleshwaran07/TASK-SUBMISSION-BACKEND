@@ -10,12 +10,10 @@ userrouter.post('/getUserInfo',  userContoller.getUser)
 userrouter.post('/forgotpassword', userContoller.forgotPassword)
 userrouter.post('/resetpassword/:userId/:token', userContoller.resetPassword)
 
-userrouter.post('/posttaskurls/:userId', userContoller.posttaskurls)
+userrouter.post('/posttaskurls/:utaskId/:userId', userContoller.posttaskurls)
 userrouter.post('/gettask/:userId', userContoller.getTaskUrls)
 userrouter.post('/commentscore/:utaskId', userContoller.postcommentscore)
-// userrouter.post('/createshorturl/:userId', userContoller.urlshortner)
-// userrouter.get('/:shortUrl', userContoller.shorturl)
-// userrouter.post('/geturlcount/:userId', userContoller.getShortUrlLength)
-// userrouter.post('/getcreatedurls/:userId',  userContoller.getCreatedUrls)
+userrouter.post('/createtask', userContoller.createTask)
+
 
 export default userrouter
