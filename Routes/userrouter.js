@@ -14,6 +14,7 @@ userrouter.post('/posttaskurls/:utaskId/:userId', userContoller.posttaskurls)
 userrouter.post('/gettask/:userId', userContoller.getTaskUrls)
 userrouter.post('/commentscore/:utaskId', userContoller.postcommentscore)
 userrouter.post('/createtask', userContoller.createTask)
+userrouter.post('/gettaskId/:taskId', userContoller.getTaskBasedOnId)
 
 
 export default userrouter
